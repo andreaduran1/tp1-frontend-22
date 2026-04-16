@@ -23,7 +23,7 @@ El proyecto mantiene los archivos HTML en la raíz para facilitar el acceso y la
 ## Guía de Estilos
 1. Paleta de Colores: Fondo principal [#000000], Textos [#FFFFFF], Acentos [#000000].
 2. Tipografías: [A definir] para títulos y [A definir] para el cuerpo (vínculos de Google Fonts incluidos en el CSS).
-3. Iconografía: Se utilizó [A definir libreria] y avatares generados mediante IA para preservar la privacidad de los integrantes.
+3. Iconografía: Se utilizó [A definir libreria] y avatares generados mediante IA para preservar la privacidad de los integrantes [generé las caricaturas con Nano Banana AI y el prompt "Convierte la imagen subida en una escena estilizada en 3D al estilo Pixar. Conserva solo la identidad central de los sujetos (como la forma facial, el peinado, la vestimenta), pero rediséñala completamente con proporciones de dibujos animados exageradas, ojos grandes y expresivos, rasgos redondeados y una apariencia linda y de juguete. Usa colores vibrantes, texturas suaves e iluminación cinematográfica cálida. Añade detalles de fondo caprichosos para evocar el estilo narrativo mágico y emocional de Pixar, tienen que aparentar ser personas que trabajan en AI e IT"] [generé los avatares con Nano Banana AI y el prompt "Transforma esta foto en un avatar de IA único y estilizado que capture el parecido y la personalidad, con colores vibrantes, toque artístico y un estilo de arte digital pulido, ideal para redes sociales, con fondos relacionados a IT e AI, 'estilo personaje de matrix'] .
 
 ## JavaScript
 1. Portada (index.html): Función [Nombre de función] que [Descripción de lo que hace, ej. cambia el color del banner al hacer scroll].
