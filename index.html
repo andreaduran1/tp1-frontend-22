@@ -1,27 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portada - Trabajo Práctico 1</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-    <header>
-        <nav>
-            <a href="index.html" >Portada</a>
-            <a href="bitacora.html" >Bitácora</a>
-            </nav>
+<body class="index-body">
+
+    <!-- HEADER -->
+    <header class="index-header">
+        <nav class="index-nav">
+            <h2 class="index-logo">
+                <img src="img/logo-BAM2.png" alt="Logo BAM">
+            </h2>
+
+
+            <ul class="index-nav-list">
+                <li><a href="index.html">Portada</a></li>
+                <li><a href="bitacora.html">Bitácora</a></li>
+            </ul>
+        </nav>
     </header>
+    <!-- MAIN -->
+    <main class="index-main">
 
-    <main>
-     
+        <section class="index-contenido">
+
+            <h1 class="index-titulo">Grupo BAM</h1>
+
+            <p class="index-subtitulo"></p>
+
+            <!-- botón hamburguesa SOLO para integrantes -->
+            <button class="index-integrantes-btn">Ver integrantes ☰</button>
+
+            <ul class="index-integrantes" id="integrantes">
+                <li><a href="andrea.html">Andrea Durán</a></li>
+                <li><a href="beatriz.html">Beatriz Gonzalez</a></li>
+                <li><a href="marcela.html">Marcela Roig</a></li>
+            </ul>
+
+            <p class="index-descripcion">
+                En este trabajo práctico, nos hemos enfocado en desarrollar una aplicación web utilizando HTML, CSS y
+                JavaScript. Hemos implementado diversas funcionalidades para mejorar la experiencia del usuario, como la
+                navegación fluida entre páginas, el diseño responsivo para adaptarse a diferentes dispositivos y la
+                integración de elementos interactivos. Además, hemos seguido buenas prácticas de desarrollo web para
+                asegurar que nuestro código sea limpio, eficiente y fácil de mantener. A lo largo del proyecto, hemos
+                aprendido a trabajar en equipo, a gestionar el tiempo de manera efectiva y a resolver problemas técnicos
+                de manera colaborativa
+            </p>
+
+        </section>
+
     </main>
 
-    <footer>
+    <!-- FOOTER -->
+    <footer class="index-footer">
         <p>&copy; 2026 - Proyecto Web en Equipo</p>
     </footer>
 
+    <!-- JS -->
+    <script src="js/index.js"></script>
+
 </body>
+
 </html>
