@@ -3,7 +3,7 @@
 **Link a Vercel:** [pendiente]
 
 ## Descripción del Proyecto
-Este trabajo práctico consiste en el desarrollo de un sitio web colaborativo que funciona como presentación del equipo. El objetivo es aplicar buenas prácticas de maquetación, diseño adaptable y manipulación del DOM mediante JavaScript. Incluye una portada, tarjetas individuales de cada integrante y una bitácora de desarrollo.
+Este trabajo práctico consiste en el desarrollo de un sitio web colaborativo que funciona como presentación del equipo. El objetivo es aplicar buenas prácticas de maquetación, diseño adaptable y manipulación del DOM mediante JavaScript. Incluye una portada con navegación, tarjetas individuales de cada integrante con información personal y gustos, y una bitácora de desarrollo. Cada página individual cuenta con al menos una función dinámica en JavaScript que modifica el contenido de la tarjeta.
 
 ## Integrantes
 1. Andrea Duran - [Link a GitHub](https://github.com/andreaduran1)
@@ -18,20 +18,26 @@ Este trabajo práctico consiste en el desarrollo de un sitio web colaborativo qu
 5. Vercel para el despliegue continuo.
 
 ## Estructura de Archivos
-El proyecto mantiene los archivos HTML en la raíz para facilitar el acceso y la navegación. Los estilos se centralizan en la carpeta /css, la lógica de programación en /js y todos los recursos visuales en /img.
+El proyecto mantiene los archivos HTML en la raíz para facilitar el acceso y la navegación. Los estilos se centralizan en la carpeta `/css`, la lógica de programación en `/js` y todos los recursos visuales en `/img`. La carpeta `/img` incluye subcarpetas para organizar imágenes por integrante.
 
 ## Guía de Estilos
-1. Paleta de Colores: Fondo principal [#000000], Textos [#FFFFFF], Acentos [#000000].
-2. Tipografías: [A definir] para títulos y [A definir] para el cuerpo (vínculos de Google Fonts incluidos en el CSS).
-3. Iconografía: Se utilizó [A definir libreria] y avatares generados mediante IA para preservar la privacidad de los integrantes [generé las caricaturas con Nano Banana AI y el prompt "Convierte la imagen subida en una escena estilizada en 3D al estilo Pixar. Conserva solo la identidad central de los sujetos (como la forma facial, el peinado, la vestimenta), pero rediséñala completamente con proporciones de dibujos animados exageradas, ojos grandes y expresivos, rasgos redondeados y una apariencia linda y de juguete. Usa colores vibrantes, texturas suaves e iluminación cinematográfica cálida. Añade detalles de fondo caprichosos para evocar el estilo narrativo mágico y emocional de Pixar, tienen que aparentar ser personas que trabajan en AI e IT"] [generé los avatares con Nano Banana AI y el prompt "Transforma esta foto en un avatar de IA único y estilizado que capture el parecido y la personalidad, con colores vibrantes, toque artístico y un estilo de arte digital pulido, ideal para redes sociales, con fondos relacionados a IT e AI, 'estilo personaje de matrix'] .
+1. **Paleta de Colores**: Fondo principal [#000000], Textos [#FFFFFF], Acentos [#000000]. Colores adicionales incluyen rojos, rosas y violetas para elementos decorativos.
+2. **Tipografías**: [Bangers](https://fonts.google.com/specimen/Bangers) para títulos y [Comic Neue](https://fonts.google.com/specimen/Comic+Neue) para el cuerpo (vínculos de Google Fonts incluidos en el CSS).
+3. **Iconografía**: No se utilizó una librería externa; se generaron avatares e ilustraciones mediante IA para preservar la privacidad de los integrantes. Las imágenes fueron creadas con Nano Banana AI utilizando prompts específicos para estilos caricaturescos y temáticos relacionados con IT y AI.
 
 ## JavaScript
-1. Portada (index.html): Función [Nombre de función] que [Descripción de lo que hace, ej. cambia el color del banner al hacer scroll].
-2. Páginas Individuales: Cada tarjeta cuenta con la función [Nombre de función] que [Descripción, ej. despliega los gustos musicales al presionar un botón].
+1. **Portada (index.html)**: Función `toggleListaIntegrantes` que muestra/oculta la lista de integrantes al hacer clic en el botón correspondiente, ubicada en `js/index.js`.
+2. **Páginas Individuales**:
+   - **Marcela Roig (marcela.html)**: Función `toggleDesafio` que muestra/oculta un desafío de ingenio general (acertijo sobre un piano) con opciones múltiples. Al seleccionar una opción, muestra si es correcta o incorrecta. Esta función se encuentra en `js/marcela.js` y modifica el contenido de la tarjeta desplegando el desafío interactivo.
 
-[Insertar capturas de pantalla del sitio]
+### Capturas de Pantalla
+- [Captura 1: Portada con lista de integrantes oculta](captura1.png)
+- [Captura 2: ](captura2.png)
+- [Captura 3: ](captura3.png)
+
+## Enlace al Proyecto Desplegado
+[Link a Vercel](pendiente) - Una vez desplegado, este enlace permitirá acceder al sitio web en producción.
 
 ## Uso de IA
-1. Herramientas: Gemini 1.5 Pro.
-2. Contenido y Código: Se utilizó IA para la generación de textos de relleno coherentes y el README.
-3. Imágenes: [Pendiente de generacion - a definir herramienta].
+1. **Herramientas**: Gemini 1.5 Pro y Nano Banana AI.
+2. **Imágenes**: Se generaron avatares con Nano Banana AI utilizando prompts como "Convierte la imagen subida en una escena estilizada en 3D al estilo Pixar" y "Transforma esta foto en un avatar de IA único y estilizado", enfocados en capturar personalidad y temas relacionados con IT e AI.

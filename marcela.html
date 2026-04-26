@@ -1,104 +1,176 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcela Roig</title>
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Tu CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
 
-    <!-- NAV -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
-            <div class="container-fluid">
+    <header class="index-header">
+        <nav class="index-nav">
+            <h2 class="index-logo">
+                <img src="img/logo-BAM2.png" alt="Logo BAM">
+            </h2>
 
-                <a class="navbar-brand" href="index.html">Grupo Bam</a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link" href="index.html">Portada</a>
-                        <a class="nav-link" href="bitacora.html">Bitácora</a>
-                    </div>
-                </div>
-
-            </div>
+            <ul class="index-nav-list">
+                <li><a href="index.html">Portada</a></li>
+                <li><a href="bitacora.html">Bitácora</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- MAIN -->
-    <main class="container my-5 flex-grow-1">
+    <main class="marcela-main">
 
-        <div class="card mx-auto text-center p-4 shadow" style="max-width: 500px;">
+        <section class="marcela-card">
 
-            <!-- Foto -->
-            <img src="img/marcela.jpg" class="rounded-circle mx-auto mb-3" alt="Foto Marcela" width="150">
+            <!-- FOTO -->
+            <img src="img/marcela-perfil.jpg" alt="Marcela Roig" class="marcela-img">
 
-            <!-- Datos -->
-            <h2 class="mb-3">Marcela Roig</h2>
+            <!-- DATOS -->
+            <h1 class="marcela-nombre">Marcela Roig</h1>
             <p><strong>Ubicación:</strong> Tigre, Buenos Aires</p>
-            <p><strong>Edad:</strong>  (completar)</p>
+            <p><strong>Edad: 43</strong></p>
 
-            <!-- Habilidades -->
-            <h4 class="mt-4">Habilidades</h4>
-            <ul class="list-group mb-3">
-                <li class="list-group-item">HTML</li>
-                <li class="list-group-item">CSS</li>
-                <li class="list-group-item">JavaScript</li>
-                <li class="list-group-item">FlutterFlow</li>
+            <!-- HABILIDADES -->
+            <h2>Habilidades (Superpoderes)</h2>
+
+            <div class="marcela-comic">
+                <div class="panel panel1">
+                    <img src="img/img-mar/ami.png" alt="Tejido de amigurumi" class="marcela-img-viñeta">
+                </div>
+                <div class="panel panel2">
+                    <img src="img/img-mar/arreglo.png" alt="Imagen de arreglando algo" class="marcela-img-viñeta">
+                </div>
+                <div class="panel panel3">
+                    <img src="img/img-mar/cocinar2.png" alt="Imagen de cocinar" class="marcela-img-viñeta">
+                </div>
+                <div class="panel panel4">
+                    <img src="img/img-mar/mente.png" alt="Personaje leyendo la mente" class="marcela-img-viñeta">
+                </div>
+
+
+            </div>
+
+            <!-- PELÍCULAS -->
+            <h2>Películas favoritas</h2>
+            <div class="marcela-pelicula">
+                <div class="marcela-card-pelicula">
+                    <p>El viaje de Chihiro</p>
+                    <div class="marcela-tooltip">La historia sigue a Chihiro en un viaje por un mundo extraño lleno de
+                        seres mágicos y sucesos inexplicables.
+                        Una metáfora de la evolución personal, donde Chihiro debe aprender a adaptarse a su nuevo
+                        entorno y descubrir su fuerza interior. La película trata temas universales pero desde el
+                        subtexto, dejando cierto espacio para la interpretación del espectador. Además, su marcado
+                        realismo mágico hace que muchas veces la acción avance de forma algo más abstracta e
+                        intuitiva, un rasgo habitual en la filmografía de Miyazaki.
+                    </div>
+                </div>
+                <div class="marcela-card-pelicula">
+                    <p>Drácula</p>
+                    <div class="marcela-tooltip">Una reinterpretación del mito clásico que pone el foco en el amor como
+                        fuerza trágica y
+                        destructiva, donde Drácula no es solo un monstruo, sino una figura atravesada por la pérdida
+                        y la condena. La película trabaja temas universales como el deseo, la muerte y la dualidad
+                        entre lo humano y lo monstruoso, apoyándose mucho en lo simbólico más que en lo explícito.
+                    </div>
+                </div>
+                <div class="marcela-card-pelicula">
+                    <p>Orgullo y Prejuicio</p>
+                    <div class="marcela-tooltip">Una adaptación que pone el foco en los vínculos, el orgullo y las
+                        barreras sociales,
+                        mostrando cómo las emociones y los juicios apresurados pueden condicionar las relaciones. La
+                        película trabaja temas universales como el amor, la clase social y el crecimiento personal,
+                        desarrollándolos de forma sutil, más desde los gestos y las miradas que desde lo explícito.
+                        Además, su tono es íntimo y delicado, con una puesta en escena que acompaña lo emocional sin
+                        exagerarlo.
+                    </div>
+                </div>
+            </div>
+
+            <!-- DISCOS -->
+            <h2>Discos favoritos</h2>
+            <ul class="marcela-list">
+                <li>
+                    <div class="marcela-card-disco">
+                        <div>
+                            <img src="img/img-mar/ImagineDragonsEvolve.jpg" alt="Tapa de disco Imagine Dragons, Evolve"
+                                class="marcela-img-disco">
+                        </div>
+                        <div>
+                            <h3> Imagine Dragons - Evolve</h3>
+                            <p>Un álbum que mezcla rock alternativo con elementos electrónicos, creando un sonido
+                                enérgico y emotivo. Las letras abordan temas de superación personal, la lucha contra
+                                las adversidades y la búsqueda de la identidad, lo que lo convierte en una experiencia
+                                inspiradora y motivadora para los oyentes.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="marcela-card-disco">
+                        <div>
+                            <img src="img/img-mar/Iron Maiden Fear.jpg"
+                                alt="Tapa de disco Iron Maiden, Fear of the Dark" class="marcela-img-disco">
+                        </div>
+                        <div>
+                            <h3> Iron Maiden - Fear of the Dark</h3>
+                            <p>Fear of the Dark representa una etapa de madurez y experimentación en la que Iron Maiden
+                                equilibró su tradicional fuerza metálica con matices más oscuros y emocionales. El álbum
+                                destaca por abordar temáticas más terrenales y personales, como los temores psicológicos
+                                y las críticas sociales, distanciándose de la narrativa épica de sus trabajos
+                                anteriores.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="marcela-card-disco">
+                        <div>
+                            <img src="img/img-mar/Calle 13 Entren.jpg"
+                                alt="Tapa de disco Calle 13, Entren los que quieran entrar" class="marcela-img-disco">
+                        </div>
+                        <div>
+                            <h3> Calle 13 - Entren los que quieran</h3>
+                            <p>Es el disco donde Calle 13 dejó de ser solo un grupo de "música urbana" para convertirse
+                                en la voz de protesta de toda Latinoamérica. En un solo álbum mezclaron ritmos de todo
+                                tipo (desde rock hasta cumbia) con letras muy directas que critican a los poderosos,
+                                defienden la cultura del continente y celebran la rebeldía. Es un trabajo que suena a
+                                calle y a lucha, pero que también tiene espacio para la reflexión y el humor negro.
+                            </p>
+                        </div>
+                    </div>
+                </li>
             </ul>
 
-            <!-- Películas -->
-            <h4>Películas favoritas</h4>
-            <ul class="list-group mb-3">
-                <li class="list-group-item">Película 1</li>
-                <li class="list-group-item">Película 2</li>
-                <li class="list-group-item">Película 3</li>
-            </ul>
+            <!-- JS después -->
+            <button class="marcela-btn" id="toggle-info">Iniciar desafío de ingenio</button>
+            <div id="desafio" style="display: none; margin-top: 20px;">
+                <h2>Desafío de Ingenio</h2>
+                <p>¿Qué tiene llaves pero no abre puertas?</p>
+                <button class="opcion-btn" data-correct="false">Guitarra</button>
+                <button class="opcion-btn" data-correct="true">Piano</button>
+                <button class="opcion-btn" data-correct="false">Tambor</button>
+                <div id="resultado" style="display: none; margin-top: 10px; font-weight: bold;"></div>
+            </div>
 
-            <!-- Música -->
-            <h4>Discos favoritos</h4>
-            <ul class="list-group mb-3">
-                <li class="list-group-item">Disco 1</li>
-                <li class="list-group-item">Disco 2</li>
-                <li class="list-group-item">Disco 3</li>
-            </ul>
-
-            <!-- Interacción JS -->
-            <button class="btn btn-primary mt-3" onclick="mostrarMensaje()">
-                Ver mensaje
-            </button>
-
-            <p id="mensaje" class="mt-3"></p>
-
-        </div>
+        </section>
 
     </main>
 
+
     <!-- FOOTER -->
-    <footer class="bg-light text-center py-3 mt-auto">
-        <p class="mb-0">&copy; 2026 - Proyecto Web en Equipo</p>
+    <footer class="index-footer">
+        <p>&copy; 2026 - Proyecto Web en Equipo</p>
     </footer>
 
-    <!-- JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <script src="js/marcela.js"></script>
 
-    <!-- JS propio -->
-    <script>
-        function mostrarMensaje() {
-            document.getElementById("mensaje").textContent = "¡Hola! Esta es mi tarjeta interactiva 😊";
-        }
-    </script>
 
 </body>
+
 </html>
