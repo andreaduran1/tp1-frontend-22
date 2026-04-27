@@ -5,73 +5,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitácora de Desarrollo - Trabajo Práctico 1</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <a href="index.html">Portada</a>
-            <a href="bitacora.html">Bitácora</a>
+    <!-- HEADER -->
+    <header class="index-header">
+        <nav class="index-nav">
+            <h2 class="index-logo">
+                <img src="img/logo-BAM2.png" alt="Logo BAM">
+            </h2>
+
+
+            <ul class="index-nav-list">
+                <li><a href="index.html">Portada</a></li>
+                <li><a href="bitacora.html">Bitácora</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <h1>Bitácora de Desarrollo</h1>
+    <main class="bitacora-main">
 
-        <section>
-            <h2>Hito 1 - 14/04 - Inicialización y Estructura Base</h2>
-            <p>El proceso comenzó con la configuración del entorno de trabajo y la creación del repositorio en GitHub.
-                En este primer commit, se definió la arquitectura del proyecto siguiendo las buenas prácticas de
-                organización de archivos. Se establecieron las carpetas independientes para estilos, lógica de
-                programación e imágenes, asegurando que los archivos HTML críticos permanezcan en la raíz para facilitar
-                el despliegue en Vercel.</p>
-            <p>Se incluyó el archivo README.md como documento maestro de información técnica. Este archivo no solo
-                describe el propósito del equipo, sino que también sirve como guía para la paleta de colores, las
-                fuentes de Google Fonts que se utilizarán una vez definidas y el registro de funciones de JavaScript que
-                se implementarán en las fases siguientes.</p>
-        </section>
-        <section>
-            <h2>Hito 1 - 15/04 - Implementación inicial con Bootstrap</h2>
+        <!--<section class="bitacora-intro">
+            <h1>Bienvenidos a la Bitácora de Desarrollo</h1>
+            <p>En esta sección, documentamos el proceso de desarrollo de nuestro proyecto web, destacando los hitos
+                clave, las decisiones tomadas y los desafíos enfrentados a lo largo del camino. A través de esta
+                bitácora, compartimos nuestras experiencias y aprendizajes durante la creación de nuestra aplicación
+                web.</p>-->
+        <section class="bitacora-contenido">
+            <h1>Bitácora de Desarrollo</h1>
 
-            <p>
-                En una primera instancia, se decidió utilizar Bootstrap con el fin de establecer una nomenclatura común
-                para todas las integrantes del grupo. Esta elección permitió obtener rápidamente una interfaz funcional
-                y adaptable a distintos tamaños de
-                pantalla sin necesidad de definir estilos desde cero. Sin embargo, durante el proceso de implementación
-                se identificaron limitaciones en cuanto a la personalización visual, ya que el diseño tendía a verse
-                genérico y poco alineado con una identidad propia del equipo.
-            </p>
-
-            <p>
-                Esta instancia sirvió como base de exploración y permitió tomar las decisiones posteriores respecto a la
-                identidad visual y el enfoque de diseño.
-            </p>
-        </section>
-        <section>
-            <h2>Hito 2 - 16/04 - Definición de Identidad Visual y Estilo Cómic</h2>
-
-            <p>
-                A nivel visual, se optó por una estética tipo cómic como identidad del proyecto. Esta decisión surgió a
-                partir del nombre del equipo, "Grupo BAM", que evoca la onomatopeya de los cómics. Se utilizó la
-                herramienta Nano Banana de Gemini para generar un logo acorde a esta temática. Se probaron varias
-                paletas de colores hasta encontrar la que más nos gustó. Esta elección sirvió como punto de partida para
-                definir la paleta de colores y el estilo gráfico del sitio. La elección de una estética
-                cómic permitió crear una identidad visual distintiva y coherente con el nombre del equipo, aportando un
-                toque divertido y dinámico a la interfaz.
-            </p>
-            <p>
-                Se establecieron los breakpoints para garantizar que el diseño se adaptara correctamente a diferentes
-                tamaños de pantalla.
-            </p>
-
+            <div class="bitacora-timeline">
+                <div class="bitacora-timeline-item">
+                    <div class="bitacora-timeline-content">
+                        <h2>Hito 1 - 14/04 - Inicialización y Estructura Base <button
+                                class="bitacora-toggle-btn">+</button>
+                        </h2>
+                        <div class="bitacora-descripcion" style="display: none;">
+                            <p>El proceso comenzó con la configuración del entorno de trabajo y la creación del
+                                repositorio en GitHub.
+                                En este primer commit, se definió la arquitectura del proyecto siguiendo las buenas
+                                prácticas de
+                                organización de archivos. Se establecieron las carpetas independientes para estilos,
+                                lógica de
+                                programación e imágenes, asegurando que los archivos HTML críticos permanezcan en la
+                                raíz para facilitar
+                                el despliegue en Vercel.</p>
+                            <p>Se incluyó el archivo README.md como documento maestro de información técnica. Este
+                                archivo no solo
+                                describe el propósito del equipo, sino que también sirve como guía para la paleta de
+                                colores, las
+                                fuentes de Google Fonts que se utilizarán una vez definidas y el registro de
+                                funciones de JavaScript que
+                                se implementarán en las fases siguientes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bitacora-timeline-item">
+                    <div class="bitacora-timeline-content">
+                        <h2>Hito 2 - 15/04 - Implementación inicial con Bootstrap <button
+                                class="bitacora-toggle-btn">+</button></h2>
+                        <div class="bitacora-descripcion" style="display: none;">
+                            <p>
+                                En una primera instancia, se decidió utilizar Bootstrap con el fin de establecer una
+                                nomenclatura común
+                                para todas las integrantes del grupo. Esta elección permitió obtener rápidamente una
+                                interfaz funcional
+                                y adaptable a distintos tamaños de
+                                pantalla sin necesidad de definir estilos desde cero. Sin embargo, durante el
+                                proceso de implementación
+                                se identificaron limitaciones en cuanto a la personalización visual, ya que el
+                                diseño tendía a verse
+                                genérico y poco alineado con una identidad propia del equipo.
+                            </p>
+                            <p>
+                                Esta instancia sirvió como base de exploración y permitió tomar las decisiones
+                                posteriores respecto a la
+                                identidad visual y el enfoque de diseño.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bitacora-timeline-item">
+                    <div class="bitacora-timeline-content">
+                        <h2>Hito 3 - 16/04 - Definición de Identidad Visual y Estilo Cómic <button
+                                class="bitacora-toggle-btn">+</button></h2>
+                        <div class="bitacora-descripcion" style="display: none;">
+                            <p>
+                                A nivel visual, se optó por una estética tipo cómic como identidad del proyecto.
+                                Esta decisión surgió a
+                                partir del nombre del equipo, "Grupo BAM", que evoca la onomatopeya de los cómics.
+                                Se utilizó la
+                                herramienta Nano Banana de Gemini para generar un logo acorde a esta temática. Se
+                                probaron varias
+                                paletas de colores hasta encontrar la que más nos gustó. Esta elección sirvió como
+                                punto de partida para
+                                definir la paleta de colores y el estilo gráfico del sitio. La elección de una
+                                estética
+                                cómic permitió crear una identidad visual distintiva y coherente con el nombre del
+                                equipo, aportando un
+                                toque divertido y dinámico a la interfaz.
+                            </p>
+                            <p>
+                                Se establecieron los breakpoints en la página index para garantizar que el diseño se
+                                adaptara
+                                correctamente a diferentes
+                                tamaños de pantalla.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bitacora-timeline-item">
+                    <div class="bitacora-timeline-content">
+                        <h2>Hito 4 - 20/04-27/04 - Creación de páginas personales <button
+                                class="bitacora-toggle-btn">+</button></h2>
+                        <div class="bitacora-descripcion" style="display: none;">
+                            <p>
+                                Se crearon las páginas personales de cada integrante del equipo, siguiendo los
+                                requerimientos solicitados en la consigna: página individual con su tarjeta de
+                                presentación, que incluye foto, nombre, ubicación actual, edad, habilidades, películas
+                                favoritas y discos musicales favoritos. Cada página se diseñó con una estética coherente
+                                con la identidad visual del proyecto, utilizando la paleta de colores y el estilo
+                                gráfico definido previamente. Se incorporaron funcionalidad en js para agregar
+                                interactividad a las páginas personales.
+                            <p>
+                                Se establecieron los breakpoints en cada para garantizar que el diseño se
+                                adaptara correctamente a diferentes tamaños de pantalla.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bitacora-timeline-item">
+                    <div class="bitacora-timeline-content">
+                        <h2>Hito 5 - 27/04 - Diseño de bitácora como timeline <button
+                                class="bitacora-toggle-btn">+</button></h2>
+                        <div class="bitacora-descripcion" style="display: none;">
+                            <p>
+                                Se diseñó la bitácora de desarrollo utilizando un formato de timeline para presentar
+                                los hitos clave del proyecto. Cada hito se representó como un elemento en la línea de
+                                tiempo, con un título, una descripción detallada y un botón para mostrar u ocultar la
+                                información adicional. Este formato permitió organizar la información de manera clara y
+                                visualmente atractiva, facilitando la navegación y comprensión del proceso de
+                                desarrollo.
+                            <p>
+                                Para la generación de este estilo se utilizó como herramienta GitHub Copilot, que
+                                permitió crear rápidamente la estructura HTML y los estilos CSS necesarios para el
+                                diseño del timeline. Se implementó funcionalidad en JavaScript para permitir la
+                                interacción con los botones de cada hito, mostrando u ocultando las descripciones según
+                                sea necesario. Este enfoque permitió presentar la información de manera dinámica.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <!-- FOOTER -->
+    <footer class="index-footer">
         <p>&copy; 2026 - Proyecto Web en Equipo</p>
     </footer>
+
+    <!-- JS -->
+    <script src="js/bitacora.js"></script>
 
 </body>
 

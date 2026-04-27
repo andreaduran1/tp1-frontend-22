@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const toggleButton = document.getElementById('toggle-info');
     const desafio = document.getElementById('desafio');
     const resultado = document.getElementById('resultado');
-    const opcionButtons = document.querySelectorAll('.opcion-btn');
+    const opcionButtons = document.querySelectorAll('.marcela-opcion-btn');
 
     console.log('Botón:', toggleButton);
     console.log('Div desafio:', desafio);
@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Botón clickeado');
             if (desafio.style.display === 'none' || desafio.style.display === '') {
                 desafio.style.display = 'block';
-                toggleButton.textContent = 'Ocultar desafío';
+                toggleButton.textContent = 'Ocultar acertijo';
                 resultado.style.display = 'none'; // Ocultar resultado anterior
                 resultado.textContent = '';
             } else {
                 desafio.style.display = 'none';
-                toggleButton.textContent = 'Iniciar desafío de ingenio';
+                toggleButton.textContent = 'Acertijo';
             }
         });
 
