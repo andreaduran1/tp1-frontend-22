@@ -250,7 +250,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     .andrea-avatar {
         width: 200px;
         height: 200px;
