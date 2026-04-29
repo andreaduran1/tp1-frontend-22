@@ -1,0 +1,366 @@
+:root {
+    --rojo: #e63946;
+    --rosa: #ff4d6d;
+    --naranja: #F08E2D;
+    --violeta: #8E2C9F;
+    --bordo: #5a0f2e;
+    --negro: #000;
+    --blanco: #fff;
+    --purpura: #19050f;
+    --fucsia: #D62369;
+    --cian: #137775;
+    --rojoOxido: #7A192A;
+    --gris: #dff2f2;
+}
+
+
+
+/* ================= MARCELA ================= */
+
+.marcela-main {
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+/* CARD */
+.marcela-card {
+    background-color: var(--blanco);
+    border: 4px solid var(--negro);
+    box-shadow: 6px 6px 0px var(--negro);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* FOTO */
+.marcela-img {
+    width: 140px;
+    border: 3px solid var(--negro);
+    box-shadow: 3px 3px 0px var(--negro);
+    margin-bottom: 10px;
+}
+
+/* NOMBRE */
+.marcela-nombre {
+    font-family: 'Bangers', cursive;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    color: var(--rosa);
+    text-shadow: 2px 2px 0px var(--negro);
+}
+
+/* LISTAS */
+.marcela-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.marcela-list li {
+    margin: 0;
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.marcela-comic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    /* Espacio entre viñetas */
+    background-color: #000;
+    /* Fondo negro para el "carril" */
+    padding: 10px;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    margin-bottom: 10%;
+}
+
+.panel {
+    background-color: var(--negro);
+    border: 4px solid var(--negro);
+    overflow: hidden;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
+}
+
+.panel1 {
+    padding-top: 30px;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.panel2 {
+    grid-row: span 1;
+}
+
+.panel3 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.panel4 {
+    padding-top: 20px;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.marcela-img-viñeta {
+    width: 100%;
+    padding-right: 5px;
+
+}
+
+.marcela-pelicula {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    justify-items: center;
+}
+
+.marcela-card-pelicula {
+    background: var(--violeta);
+    font-family: 'Bangers', cursive;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    position: relative;
+    padding: 18px;
+    width: 80%;
+    border: 4px solid var(--negro);
+    box-shadow: 8px 8px 0px var(--negro);
+    border-radius: 18px;
+    transform: rotate(-2deg);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    color: var(--blanco);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+
+.marcela-card-pelicula:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+.marcela-card-pelicula:hover {
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 12px 12px 0px var(--negro);
+}
+
+.marcela-card-pelicula p {
+    margin: 0;
+    line-height: 1.4;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.marcela-tooltip {
+    font-family: 'Comic Neue', cursive;
+    font-size: 0.9rem;
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.96);
+    color: var(--negro);
+    width: calc(100% - 24px);
+    padding: 12px;
+    border: 3px solid var(--negro);
+    border-radius: 14px;
+    top: auto;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 100;
+}
+
+.marcela-card-pelicula:hover .marcela-tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(6px);
+}
+
+.marcela-card-disco {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 12px;
+    background: linear-gradient(135deg, var(--fucsia), var(--naranja));
+    border: 4px solid var(--negro);
+    padding: 14px;
+    border-radius: 16px;
+    box-shadow: 8px 8px 0px var(--negro);
+    transform: rotate(-1deg);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.marcela-list li:nth-child(even) .marcela-card-disco {
+    transform: rotate(1deg);
+}
+
+.marcela-card-disco:hover {
+    
+    box-shadow: 12px 12px 0px var(--negro);
+}
+
+.marcela-card-disco div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marcela-img-disco {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    border: 3px solid var(--negro);
+    border-radius: 12px;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.marcela-card-disco h3 {
+    margin: 0 0 8px 0;
+    font-family: 'Bangers', cursive;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: var(--blanco);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.35);
+}
+
+.marcela-card-disco p {
+    margin: 0;
+    color: var(--blanco);
+    line-height: 1.4;
+    font-weight: 700;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.marcela-btn {
+    margin-top: 15px;
+    background: linear-gradient(135deg, var(--rojo), var(--fucsia));
+    border: 4px solid var(--negro);
+    padding: 14px 24px;
+    cursor: pointer;
+    box-shadow: 6px 6px 0px var(--negro);
+    font-size: large;
+    color: var(--blanco);
+    border-radius: 14px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.marcela-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 10px 10px 0px var(--negro);
+}
+
+.marcela-btn:active {
+    transform: translate(2px, 2px);
+}
+
+.marcela-desafio {
+    background: linear-gradient(135deg, rgba(133, 43, 160, 0.96), rgba(83, 16, 96, 0.96));
+    border: 4px solid var(--negro);
+    border-radius: 18px;
+    padding: 20px;
+    color: var(--blanco);
+    box-shadow: 8px 8px 0px var(--negro);
+}
+
+.marcela-desafio h2 {
+    margin-top: 0;
+    color: var(--blanco);
+}
+
+.marcela-desafio p {
+    font-size: large;
+    margin-bottom: 16px;
+}
+
+.marcela-opcion-btn {
+    margin-top: 12px;
+    background-color: var(--rojo);
+    font-size: medium;
+    color: var(--blanco);
+    border: 3px solid var(--negro);
+    padding: 12px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px var(--negro);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.marcela-opcion-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 9px 9px 0px var(--negro);
+    background-color: #ff5a5a;
+}
+
+/* Media queries para responsive */
+@media (max-width: 768px) {
+    .marcela-comic {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .panel1, .panel2, .panel3, .panel4 {
+        grid-column: span 1;
+        grid-row: span 1;
+        padding-top: 0;
+    }
+
+    .marcela-pelicula {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .marcela-card-pelicula {
+        width: 100%;
+    }
+
+    .marcela-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.marcela-opcion-btn:active {
+    transform: translate(2px, 2px);
+}
+
+/* ================= RESPONSIVE MARCELA ================= */
+
+@media (min-width: 400px) {
+    .marcela-card {
+        max-width: 550px;
+    }
+
+    .marcela-nombre {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .marcela-card {
+        max-width: 700px;
+    }
+
+    .marcela-img {
+        width: 160px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .marcela-card {
+        max-width: 900px;
+    }
+
+    .marcela-nombre {
+        font-size: 3rem;
+    }
+}
+
