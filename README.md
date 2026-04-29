@@ -26,9 +26,16 @@ El proyecto mantiene los archivos HTML en la raíz para facilitar el acceso y la
 3. **Iconografía**: No se utilizó una librería externa; se generaron avatares e ilustraciones mediante IA para preservar la privacidad de los integrantes. Las imágenes fueron creadas con Nano Banana AI utilizando prompts específicos para estilos caricaturescos y temáticos relacionados con IT y AI.
 
 ## JavaScript
-1. **Portada (index.html)**: Función `toggleListaIntegrantes` que muestra/oculta la lista de integrantes al hacer clic en el botón correspondiente, ubicada en `js/index.js`.
+1. **Portada (index.html)**:
+   - `toggleListaIntegrantes`: muestra/oculta la lista de integrantes al hacer clic en el botón, ubicada en `js/index.js`.
+   - `LogoSplash animado`: al cargar la página se muestra un splash screen con el logo, se bloquea el scroll y luego desaparece con animación.
 2. **Páginas Individuales**:
-   - **Marcela Roig (marcela.html)**: Función `toggleDesafio` que muestra/oculta un desafío de ingenio general (acertijo sobre un piano) con opciones múltiples. Al seleccionar una opción, muestra si es correcta o incorrecta. Esta función se encuentra en `js/marcela.js` y modifica el contenido de la tarjeta desplegando el desafío interactivo.
+   - **Marcela Roig (marcela.html)**: `toggleDesafio` muestra/oculta el desafío interactivo y los resultados. Cada botón de opción valida si la respuesta es correcta o incorrecta y actualiza el mensaje visible. Esta función está en `js/marcela.js`.
+   - **Beatriz Gonzalez (beatriz.html)**: contador de caracteres en el campo de mensaje (`textarea`), un carrusel de información de Photoshop que actualiza texto al pasar el mouse sobre imágenes, y validación visual del formulario que resalta el botón de enviar cuando todos los campos son válidos. Estas funciones están en `js/beatriz.js`.
+3. **Bitácora**:
+   - **bitacora.html**: botones `+ / −` para mostrar y ocultar descripciones de avance en cada entrada de la bitácora. Este comportamiento se programa en `js/bitacora.js`.
+4. **Otras páginas**:
+   - **Andrea Duran (andrea.html)**: página de presentación con contenido estático y estilo consistente, sin funciones JavaScript propias adicionales.
 
 ### Capturas de Pantalla
 - [Captura 1: Portada con lista de integrantes oculta](captura1.png)
