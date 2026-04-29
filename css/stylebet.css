@@ -2,9 +2,13 @@
                     BEATRIZ Styles
 ============================================================ */
 .beatriz-main {
-    display: flex;
-    justify-content: center;
-    padding: 30px 15px;
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px;
 }
 
 /* ============================================================
@@ -70,8 +74,8 @@ textarea {
 }
 
 .logo-img{
-    width: 18%;
-    height: 18%;
+    width: 5%;
+    height: 5%;
     box-shadow: 0.2rem 0.4rem 0.5rem var(--negro); 
 }  
 .navigation ul{
@@ -103,11 +107,11 @@ textarea {
    FOTO
 ============================================================ */
 .beatriz-img {
-    width: 600px;
+    flex: 1 1 100%;
+    text-align: center;
     border: 3px solid var(--negro);
-    box-shadow: 3px 3px 0px var(--negro);
-    margin-bottom: 10px;
-}
+    box-shadow: 0.2rem 0.4rem 0.5rem var(--negro);
+}    
 /* ============================================================
    ANIMACIONES
 ============================================================ */
