@@ -1,6 +1,6 @@
 # Trabajo Práctico Grupal 1 - Proyecto Web en Equipo
 
-**Link a Vercel:** [pendiente]
+[Link a Vercel](https://tp1-frontend-22.vercel.app/)
 
 ## Descripción del Proyecto
 Este trabajo práctico consiste en el desarrollo de un sitio web colaborativo que funciona como presentación del equipo. El objetivo es aplicar buenas prácticas de maquetación, diseño adaptable y manipulación del DOM mediante JavaScript. Incluye una portada con navegación, tarjetas individuales de cada integrante con información personal y gustos, y una bitácora de desarrollo. Cada página individual cuenta con al menos una función dinámica en JavaScript que modifica el contenido de la tarjeta.
@@ -38,13 +38,14 @@ El proyecto mantiene los archivos HTML en la raíz para facilitar el acceso y la
    - **Andrea Duran (andrea.html)**: página de presentación con contenido estático y estilo consistente, sin funciones JavaScript propias adicionales.
 
 ### Capturas de Pantalla
-- [Captura 1: Portada con lista de integrantes oculta](captura1.png)
-- [Captura 2: ](captura2.png)
-- [Captura 3: ](captura3.png)
-
-## Enlace al Proyecto Desplegado
-[Link a Vercel](pendiente) - Una vez desplegado, este enlace permitirá acceder al sitio web en producción.
+- [Captura 1: Portada con lista de integrantes oculta](./img/capturas/captura1.png)
+- [Captura 2: Bitácora con elemento acordión](./img/capturas/captura2.png)
+- [Captura 3: Pantalla de Integrante - Andrea](./img/capturas/captura3.png)
+- [Captura 4: Pantalla de Integrante - Marcela](./img/capturas/captura4.png)
+- [Captura 5: Pantalla de Integrante - Beatriz](./img/capturas/captura5.png)
+- [Captura 6: Logo Splash al cargar la portada](./img/capturas/captura6.png)
 
 ## Uso de IA
-1. **Herramientas**: Gemini 1.5 Pro y Nano Banana AI.
-2. **Imágenes**: Se generaron avatares con Nano Banana AI utilizando prompts como "Convierte la imagen subida en una escena estilizada en 3D al estilo Pixar" y "Transforma esta foto en un avatar de IA único y estilizado", enfocados en capturar personalidad y temas relacionados con IT e AI.
+1. **Herramientas**: Gemini 3 Pro y GPT-4.
+2. **Imágenes**: Se generaron avatares con Nano Banana AI utilizando prompts como "Una sola viñeta de cómic clásico,
+estilo Pop Art, primer plano de personaje adjunto, puntos Ben-Day, colores primarios, fondo de acción explosivo, estilo ilustración de novela gráfica antigua, línea artística definida.", enfocados en capturar personalidad.
