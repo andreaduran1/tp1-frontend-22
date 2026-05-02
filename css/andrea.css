@@ -1,3 +1,18 @@
+.andrea-main {
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.andrea-panel-presentacion {
+    flex: 1 1 100%;
+    text-align: center;
+}
+
 .andrea-avatar {
     width: 250px;
     height: 250px;
@@ -10,11 +25,68 @@
     display: block;
 }
 
+.andrea-nombre {
+    font-size: 4.5rem;
+    color: #fff;
+    -webkit-text-stroke: 2px var(--negro);
+    text-shadow: 6px 6px 0px var(--negro);
+    margin: 0;
+    font-family: 'Bangers', cursive;
+    text-transform: uppercase;
+}
+
+.andrea-info-caja {
+    display: inline-block;
+    margin-top: 15px;
+    background: var(--blanco);
+    border: 4px solid var(--negro);
+    padding: 10px 25px;
+    box-shadow: 5px 5px 0px var(--negro);
+    transform: rotate(-2deg);
+}
+
+.andrea-info-texto {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: bold;
+    color: var(--negro);
+    text-align: left;
+}
+
+.andrea-panel-mitad {
+    flex: 1 1 300px;
+}
+
+.andrea-subtitulo {
+    font-size: 2.5rem;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.andrea-subtitulo-peliculas {
+    font-size: 3rem;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.andrea-subtitulo-discos {
+    color: var(--purpura);
+    text-shadow: 2px 2px 0px var(--blanco);
+}
+
 .andrea-panel-peliculas {
     background-color: var(--blanco);
     border: 4px solid var(--negro);
     box-shadow: 6px 6px 0px var(--negro);
     padding: 30px;
+    flex: 1 1 100%;
 }
 
 .andrea-grilla-peliculas {
@@ -248,12 +320,69 @@
     .andrea-grilla-peliculas {
         grid-template-columns: 1fr;
     }
+
+    .andrea-nombre {
+        font-size: 3.5rem;
+    }
+
+    .andrea-subtitulo-peliculas {
+        font-size: 2.5rem;
+    }
+
+    .andrea-tarjeta-pelicula {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .andrea-pelicula-col-img {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .andrea-pelicula-col-globo {
+        width: 100%;
+        padding-top: 15px;
+    }
+
+    .andrea-globo-texto::before {
+        left: 50%;
+        top: -15px;
+        border-width: 0 15px 15px 20px;
+        border-color: transparent transparent var(--negro) transparent;
+        transform: translateX(-50%);
+    }
+
+    .andrea-globo-texto::after {
+        left: 50%;
+        top: -11px;
+        border-width: 0 11px 11px 15px;
+        border-color: transparent transparent #333 transparent;
+        transform: translateX(-50%);
+    }
 }
 
 @media (max-width: 400px) {
     .andrea-avatar {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .andrea-nombre {
+        font-size: 2.5rem;
+    }
+
+    .andrea-subtitulo {
+        font-size: 2rem;
+    }
+
+    .andrea-subtitulo-peliculas {
+        font-size: 2rem;
+    }
+
+    .andrea-info-texto {
+        font-size: 1.1rem;
     }
 
     .andrea-panel-peliculas {
@@ -269,7 +398,7 @@
     .andrea-pelicula-col-img {
         flex: 0 0 auto;
         width: 100%;
-        max-width: 250px;
+        max-width: 150px;
     }
 
     .andrea-pelicula-col-globo {
