@@ -276,45 +276,7 @@
   color: var(--color-slate-600);
   line-height: 1.65;
 }
-.tooltip-text {
-    font-family: 'Comic Neue', cursive;
-    font-size: 0.9rem;
-    visibility: hidden;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.96);
-    color: var(--negro);
-    width: calc(100% - 24px);
-    padding: 12px;
-    border: 3px solid var(--negro);
-    border-radius: 14px;
-    top: auto;
-    bottom: 110%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    z-index: 100;
-}
-.tooltip-text {
-  visibility: hidden;
-  opacity: 0;
-  width: 150px;
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 5px;
-  border-radius: 6px;
-  
-  /* Posicionamiento: arriba y centrado */
-  position: absolute;
-  bottom: 125%; /* Aparece arriba del texto */
-  left: 50%;
-  transform: translateX(-50%); /* Centrado perfecto */
-  
-  /* Transición para suavizar la aparición */
-  transition: opacity 0.3s;
-  z-index: 1;
-}
+
 
 /* Mostrar tooltip al hacer hover */
 .pelicula-titulo:hover .tooltip-text {
@@ -470,7 +432,7 @@
 ============================================================ */
 @media (min-width: 400px) {
     .beatriz-card {
-        max-width: 550px;
+        max-width: 300px;
     }
 
     .beatriz-nombre {
