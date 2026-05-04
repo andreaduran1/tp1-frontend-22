@@ -27,20 +27,11 @@
     <main class="beatriz-main">
 
         <section class="beatriz-card">
-        
+            
             <div class="container logo-nav-container">
             <img src="img/img-bet/LogoBG.png" alt="Logo BG" class="logo-img slide-in-fwd-top">
             
-            <nav class="navigation">
-                <ul>
-                    <li><a href="beatriz.html">Inicio</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#peliculas">Películas</a></li>
-                    <li><a href="#canciones">Canciones</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-
-                </ul>
-            </nav>
+            
         </div>
             
             <!-- FOTO -->
@@ -48,8 +39,14 @@
             <h1 id="aboutme"class="beatriz-nombre">Beatriz González</h1>
             <!-- DATOS -->
             <br>
-            <img src="img/img-bet/edad y lugar.png" alt="Edad y Lugar" class="beatriz-img">
-         </div>
+              <!-- Cajas de información -->
+            <div class="flex flex-col md:flex-row justify-center gap-6      mt-12    w-full max-w-2xl px-4 md:px-0">
+            <img src="img\img-bet\edad.png" alt="Edad 68" class="beatriz-img">
+            
+            <img src="img\img-bet\lugar.png" alt="Ubicación CABA" class="beatriz-img">
+            </div>
+            
+        </div>
               
  <!-- =========================================================
          SECCIÓN HABILIDADES
@@ -155,9 +152,12 @@
             
             <div class="pelicula-info">
               <h3 class="pelicula-titulo">Lucy</h3>
-              <p class="pelicula-anio">2014</p>
-              <p class="pelicula-descripcion">
+                 <p class="pelicula-anio">2014</p>
+                 <div class="pelicula-descripcion">
                 Lucy, una joven obligada a ejercer de mula de una nueva y potente droga, adquiere de repente enormes poderes sobrenaturales cuando la bolsa de la droga se rompe y los narcóticos entran en contacto con su cuerpo. Entonces, su cerebro comienza a aumentar la capacidad de uso hasta poder ser utilizado al 100%, convirtiéndose en una máquina letal con habilidades extraordinarias. (FILMAFFINITY)
+               </div>
+             
+                              
               </p>
 
             </div>
@@ -169,9 +169,9 @@
             <div class="pelicula-info">
               <h3 class="pelicula-titulo">Un don excepcional</h3>
               <p class="pelicula-anio">2017</p>
-              <p class="pelicula-descripcion">
+              <div class="pelicula-descripcion">
                 Tras el fallecimiento de su hermana, Frank Adler (Chris Evans) se hizo cargo de su sobrina Mary (Mckenna Grace), y ambos viven juntos en un pueblo costero de Florida. La niña tiene ya 7 años, y demuestra tener un asombroso talento para las matemáticas. La situación se complica cuando Frank deberá luchar por la custodia de la niña, pues la abuela cree que debe irse a vivir con ella a Massachusetts y aprovechar su don con los números. (FILMAFFINITY)
-              </p>
+              </div>
             </div>
           </article>
 
@@ -181,9 +181,9 @@
             <div class="pelicula-info">
               <h3 class="pelicula-titulo">Figuras ocultas</h3>
               <p class="pelicula-anio">2016</p>
-              <p class="pelicula-descripcion">
+              <div class="pelicula-descripcion">
                 La increíble historia verdadera de tres brillantes mujeres afroamericanas que trabajaron en la NASA, que sirvieron de cerebros detrás de uno de las más grandes operaciones en la historia: el lanzamiento en órbita del astronauta John Glenn.  Estas mujeres cruzaron todas las líneas de género, raza y profesionales con su brillantez y su deseo por soñar en grande, más allá de cualquier cosa lograda antes por la raza humana, y eso las colocó firmemente en la historia como auténticas heroínas estadounidenses.
-              </p>
+              </div>
             </div>
           </article>
 
@@ -234,102 +234,7 @@
                 </li>
             </ul>
 
-<!-- =========================================================
-         SECCIÓN CONTACTO.
-    ========================================================= -->        
-            <h2 id="contacto">Contacto</h2>
-                <form action="bet_show_data.html" target="_blank">
-             
-
-                    <fieldset>
-                        <legend>DATOS PERSONALES</legend>
-                        <div class="logo-nav-container">
-                            <div class="col40">
-                                <label for="fname">Nombre</label><br>
-                                <input type="text" id="fname" name="fname" required=""
-                                    placeholder="Ingrese su nombre aqui...">
-                                <br>
-                            </div>
-                            <div class="col40">
-                                <label for="lname">Apellido</label><br>
-                                <input type="text" id="lname" name="lname" required=""
-                                    placeholder="Ingrese su apellido aqui...">
-                                <br>
-                            </div>
-                           
-                        </div>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>DIRECCIÓN</legend>
-                        <div class="logo-nav-container">
-                            <div class="col40">
-                                <label for="street">Calle</label><br>
-                                <input type="text" name="address" id="address"
-                                    placeholder="Ingrese su dirección aqui..."> <br>
-                            </div>
-                            <div class="col20">
-                                <label for="number">Número</label><br>
-                                <input type="number" name="number" id="number" placeholder="Nro"> <br>
-                            </div>
-                        </div>    
-                        <div class="logo-nav-container">
-                            <div class="col40">
-                                <label for="city">Ciudad</label> <br>
-                                <input type="text" name="city" id="city" value="C.A.B.A."> <br>
-                            </div>
-                            <div class="col20">
-                                <label for="zipcode">Código Postal</label> <br>
-                                <input type="text" name="zipcode" id="zipcode"
-                                    placeholder="C.P.">
-                            </div>
-             
-                           
-                          </div>    
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend> OTROS DATOS</legend>
-                        <div class="logo-nav-container">
-                            <div class="col40">
-                                <label for="telefono">Telefono</label> <br>
-                                <input type="tel" name="telefono" id="telefono"
-                                    placeholder="ingrese su teléfono aqui ....">
-                            </div>
-                            <div class="col40">
-                                <label for="mail">Mail</label> <br>
-                                <input type="email" name="email" id="email" placeholder="ingrese su mail aqui"
-                                    required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                            </div>
-                           
-                        </div>
-                    </fieldset>
-                        <fieldset>
-                            <legend>COMENTARIOS</legend>
-                            <div class="col80">
-                                
-                            
-                                 <label for="mensaje">Mensaje</label> 
-                                   <br>
-                                  <textarea name="comentarios" id="mensaje" maxlength="300" placeholder="Escribe tu comentario aquí..."></textarea>
-                                   <div id="contador-container">
-                                      <span id="caracteres">0</span>/300 caracteres
-                                   </div>
-                                </div>
-
-
-                            </div>  
-                        </fieldset>
-                    </div>
-                        <div class="col80">
-                             <input class="siguiente" type="submit" value="Enviar">
-                        </div>
-                    </div>
-
-                    <br><br>
-                
-            </form>
-             
+        
         </section>
 
     </main>
